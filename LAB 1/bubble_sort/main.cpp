@@ -45,9 +45,9 @@ void printEmployees(Employee arr[], int size) {
     }
 }
 // swap function
-void swap (int &item1,int &item2)
+void swap (Employee &item1,Employee &item2)
 {
-    int temp;
+    Employee temp;
     temp = item1;
     item1=item2;
     item2=temp;
@@ -59,7 +59,7 @@ void bubbleSort(Employee arr[], int size) {
             // Compare based on employee ID (you can change the comparison criteria)
             if (arr[j].employeeID > arr[j + 1].employeeID) {
                 // Swap the employees
-                swap(arr[j].employeeID,arr[j + 1].employeeID);
+                swap(arr[j],arr[j + 1]);
             }
         }
     }
